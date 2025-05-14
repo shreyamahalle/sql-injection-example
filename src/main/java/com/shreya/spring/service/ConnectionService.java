@@ -16,18 +16,16 @@ public class ConnectionService {
     @Value("${application.mysql.username}")
     private String username;
 
-    @Value("${application.mysql.password")
+    @Value("${application.mysql.password}")
     private String password;
 
-    public Connection getConnection(){
+    public Connection getConnection() {
         Connection connection = null;
-        try{
+        try {
             connection = DriverManager.getConnection(jdbcUrl, username, password);
-            System.out.println("Connection to the database");
-
+            System.out.println("Connected to the database!");
         } catch (SQLException e) {
-            System.out.println("Connection error: " + e.getMessage());
-            throw new RuntimeException(e);
+            System.err.println("Connection error: " + e.getMessage());
         }
         return connection;
     }
