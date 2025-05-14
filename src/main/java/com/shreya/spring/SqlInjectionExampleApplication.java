@@ -9,5 +9,4 @@ public class SqlInjectionExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SqlInjectionExampleApplication.class, args);
 	}
-
 }
