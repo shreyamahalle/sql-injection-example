@@ -4,8 +4,8 @@
 Pls set below properties in application.properties as per your mysql database setup.
 ```properties
 application.mysql.username=root
-application.mysql.password=admin
-application.mysql.database-name=demodb
+application.mysql.password=root
+application.mysql.database-name=foodorder
 ```
 
 ## Create table in your database
